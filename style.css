@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 body{
     background-color: black;
+    font-family: "Itim", cursive;
+
 }
 
 *::selection{
@@ -31,10 +35,6 @@ body{
     justify-content: space-evenly;
 }
 
-.card img{
-    
-
-}
 
 a{
     text-decoration: none;
@@ -50,6 +50,56 @@ a{
     border: 4px solid yellow;
     background-color: salmon;
 
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+}
+
+.video{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.video iframe{
+    width: 335px;
+    height: 600px;
+    margin: 40px;
+    border-radius: 40px;
+}
+
+.button-switch{
+    /* background-color: white; */
+    width: 750px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-switch a{
+    background-color: bisque;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    border-radius: 40px;
+    font-weight: bold;
+    border: 4px solid white;
+}
+
+.button-switch a:hover{
+    background-color: salmon;
+    color: white;
+}
+
+#link{
+    background-color: salmon;
 }
 
 @media (max-width: 600px) {
@@ -71,5 +121,9 @@ a{
 
     .card small{
         font-size: 20px;
+    }
+
+    .button-switch{
+        width: 600px;
     }
 }
